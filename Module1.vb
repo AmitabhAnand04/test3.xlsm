@@ -5,8 +5,12 @@ Sub ConnectToAzureSQL()
     Dim connectionString As String
     
     ' Connection string
-    connectionString = "Provider=SQLOLEDB;Data Source=chatbotserver456.database.windows.net;Initial Catalog=pocdb;User Id=sqlserver;Password=chatbot@123;"
-    
+    connectionString = "Provider=SQLOLEDB;" & _
+                    "Data Source=chatbotserver456.database.windows.net;" & _
+                    "Initial Catalog=pocdb;" & _
+                    "User Id=sqlserver;" & _
+                    "Password=chatbot@123;"
+
     ' Create a new connection object
     Set conn = CreateObject("ADODB.Connection")
     
